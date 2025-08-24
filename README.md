@@ -1,4 +1,4 @@
-### Z
+[<img width="128" height="128" alt="z-icon" src="https://github.com/user-attachments/assets/2fe29c66-69cc-473f-a9eb-cf4eb83322e4" />](https://github.com/hydrophobis/Z-Compiler/blob/main/z-icon.png)<br>
 A strict superset of C aimed at making large scale programming a little easier while keeping the low-level control C allows
 
 ## Features
