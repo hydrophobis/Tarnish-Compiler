@@ -10,6 +10,9 @@ A strict superset of C aimed at making large scale programming a little easier w
 - Currently flattens nested classes
 - Functions in classes that do not modify themself come with a slight overhead since self is still passed as a param
 
+## Requirements
+* gcc
+
 ## Usage
 Define classes with the class keyword
 ```CPP
@@ -48,4 +51,18 @@ int main(){
   demo demo_inst;
   demo_inst.demofunc('3');
 }
+```
+Include C files using #include or include Z files using #import because Z files must be transpiled before included while C files cannot be
+```CPP
+#include <stdio.h>
+#import <localfile.z>
+```
+Use any C preprocessor directive
+```CPP
+#define DEMO
+#ifdef DEMO
+#undef DEMO
+#else
+#endif
+...
 ```
