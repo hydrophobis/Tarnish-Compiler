@@ -1,0 +1,11 @@
+int libfn(){
+    return 1;
+}
+
+class test {
+    int testfn(int testparam){
+        self.f = 1;
+        return self.f;
+    }
+    int f;
+}

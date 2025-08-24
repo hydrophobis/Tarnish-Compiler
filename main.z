@@ -1,0 +1,13 @@
+#include <stdio.h>
+#import <lib.z>
+#define TESTDEF 472
+
+int main(){
+    test testing;
+
+    printf("%i\n", libfn());
+    printf("%i\n", testing.testfn(1));
+#ifdef TESTDEF2
+    printf("%i\n", TESTDEF);
+#endif
+}
