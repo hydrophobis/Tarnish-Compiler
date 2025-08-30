@@ -5,7 +5,7 @@ use tokenizer::{tokenize, Token};
 
 use crate::tokenizer::detokenize;
 
-pub static DEBUG: bool = true;
+pub static DEBUG: bool = false;
 
 // AST
 #[derive(Debug)]
