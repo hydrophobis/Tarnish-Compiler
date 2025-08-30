@@ -66,3 +66,12 @@ Use any C preprocessor directive
 #endif
 ...
 ```
+Operator overloading ("+", "-", "*", "/", "==", "!=", "<", ">", "<=", ">=", "+=", "-=", "*=", "/=")
+```CPP
+class demo {
+  int x;
+  demo operator+(demo other){
+    return self.x + other.x;
+  }
+}
+```

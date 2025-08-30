@@ -1,13 +1,23 @@
 #include <stdio.h>
-#import <lib.z>
-#define TESTDEF 472
+
+class Vector {
+    int x;
+    int y;
+    
+    Vector operator+(Vector other) {
+        return (Vector){self.x + other.x, self.y + other.y};
+    }
+    
+    void print() {
+        printf("{%i, %i}\n", self.x, self.y);
+    }
+}
 
 int main(){
-    test testing;
-
-    printf("%i\n", libfn());
-    printf("%i\n", testing.testfn(1));
-#ifdef TESTDEF2
-    printf("%i\n", TESTDEF);
-#endif
+    Vector v1 = (Vector){2, 3};
+    Vector v2 = (Vector){2, 3};
+    Vector result = v1 + v2;
+    result.print();
+    Vector v3 = (Vector){0x0, 0xF};
+    v3.print();
 }
